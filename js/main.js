@@ -101,6 +101,22 @@ function FindLastEven() {
 
 document.getElementById("btnb5").onclick = FindLastEven;
 
+// BÀI 6: ĐỔI CHỖ
+function swap() {
+    var viTri1 = Number(document.getElementById("input1").value);
+    var viTri2 = Number(document.getElementById("input2").value);
+    var tam = 0;
+    for (var i = 0; i < numArray.length; i++) {
+        tam = numArray[viTri1];
+        numArray[viTri1] = numArray[viTri2];
+        numArray[viTri2] = tam;
+        console.log(tam, numArray[viTri1], numArray[viTri2], numArray)
+    }
+
+    document.getElementById("b6").innerHTML = "Đổi chổ: " + numArray;
+}
+document.getElementById("btnb6").onclick = swap;
+
 // BÀI 7: SẮP XẾP TĂNG DẦN
 function SortAs() {
     var tg;
