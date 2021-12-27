@@ -3,7 +3,7 @@ document.getElementById("btnAdd").onclick = function () {
 
     var num = Number(document.getElementById("number").value);
     numArray.push(num);
-    document.getElementById("show").innerHTML = numArray;
+    document.getElementById("show").innerHTML = "=> Các số đã thêm vào mảng: " + numArray;
 
 }
 
@@ -119,22 +119,29 @@ function SortAs() {
 document.getElementById("btnb7").onclick = SortAs;
 
 // BÀI 8: TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN
-function FindFirstPrime() {
-    text = "";
-    for (num = numArray[0]; num <= numArray[numArray.length]; num++) {
-        count = 0;
-        for (i = 2; i <= num / 2; i++) {
-            if (num % i == 0) {
-                count++;
-                break;
-            }
-            break;
+
+function isPrime(n) {
+    if (n > 1) {
+        for (var i = 2; i < n; i++) {
+            if (n % i == 0) return false;
         }
-        if (count == 0 && num != 1)
-            text += " " + num;
+        return true;
     }
-    document.getElementById("b8").innerHTML = "Các số nguyên tố: " + text;
+    else
+        return false;
+
 }
+function FindFirstPrime() {
+    var newArray = [];
+    for (var i = 0; i <= numArray.length; i++) {
+        if (isPrime(numArray[i])) {
+            newArray.push(numArray[i]);
+        }
+    }
+    console.log(newArray);
+    document.getElementById("b8").innerHTML = newArray[0];
+}
+
 document.getElementById("btnb8").onclick = FindFirstPrime;
 
 // BÀI 9: ĐẾM SỐ NGUYÊN

@@ -8,13 +8,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="array">
+        <label for="number">Nhập số bất kỳ:</label>
         <input type="number" id="number">
-        <button id="btnAdd">Thêm số</button>
+        <div class="btn__wrap">
+            <button class="btn" id="btnAdd">Thêm số</button>
+        </div>
         <p id="show"></p>
     </div>
     <div class="accordion" id="accordionExample">
@@ -28,7 +31,9 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb1">Tính tổng</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb1">Tính tổng</button>
+                    </div>
                     <p id="b1"></p>
                 </div>
             </div>
@@ -43,7 +48,9 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb2">Đếm</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb2">Đếm</button>
+                    </div>
                     <p id="b2"></p>
                 </div>
             </div>
@@ -58,7 +65,9 @@
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb3">Tìm </button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb3">Tìm </button>
+                    </div>
                     <p id="b3"></p>
                 </div>
             </div>
@@ -73,7 +82,9 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb4">Tìm </button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb4">Tìm </button>
+                    </div>
                     <p id="b4"></p>
                 </div>
             </div>
@@ -88,11 +99,31 @@
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb5">Tìm </button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb5">Tìm </button>
+                    </div>
                     <p id="b5"></p>
                 </div>
             </div>
         </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    6. Đổi chỗ
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="btn__wrap">
+                        <button class="btn" id="btn6">Tìm </button>
+                    </div>
+                    <p id="b6"></p>
+                </div>
+            </div>
+        </div>
+
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -103,7 +134,9 @@
             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb7">Sắp xếp</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb7">Sắp xếp</button>
+                    </div>
                     <p id="b7"></p>
                 </div>
             </div>
@@ -118,7 +151,9 @@
             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb8">Tìm</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb8">Tìm</button>
+                    </div>
                     <p id="b8"></p>
                 </div>
             </div>
@@ -134,7 +169,9 @@
             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb9">Đếm</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb9">Đếm</button>
+                    </div>
                     <p id="b9"></p>
                 </div>
             </div>
@@ -149,7 +186,9 @@
             <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <button style="width:100px;height:40px" id="btnb10">Đếm</button>
+                    <div class="btn__wrap">
+                        <button class="btn" id="btnb10">So sánh</button>
+                    </div>
                     <p id="b10"></p>
                 </div>
             </div>

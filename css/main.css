@@ -1,0 +1,42 @@
+.btn__wrap{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    border: solid 2px #fdc800;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000;
+    display: block;
+
+}
+
+
+.btn:hover,.btn:focus {
+    background-position: right center;
+    color: #000 !important;
+    text-decoration: none;
+    box-shadow: 
+    inset -3.5em 0 0 0 #fdc800,
+    inset 3.5em 0 0 0 #fdc800;  
+
+}
+
+.accordion{
+    width: 50%;
+    margin:auto;
+}
+
+.accordion-body{
+
+    text-align: center;
+}
+.array{
+    text-align: center;
+}
+.array input{
+    width: 300px;
+    margin:20px 0;
+}
